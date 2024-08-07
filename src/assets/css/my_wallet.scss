@@ -1,0 +1,95 @@
+.my_wallet{
+    position: relative;
+    height: 100vh;
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .title{
+            color: #fff;
+            font-size: 50px;
+            margin-top: 100px;
+
+        }
+        .account_balance{
+            font-size: 40px;
+            color: #fefe03;
+            letter-spacing: 5px;
+            margin: 20px 0;
+        }
+        span{
+            color: #fff;
+            font-size: 25px;
+            letter-spacing: 3px;
+
+        }
+        .btn_deposit-withdraw{
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            .btn_deposit{
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+                background-color: #188754;
+                cursor: pointer;
+                color: white;
+                letter-spacing: 1px;
+            }
+            .btn_withdraw{
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+                background-color: #dc3445;
+                cursor: pointer;
+                color: white;
+                letter-spacing: 1px;
+
+            }
+        }
+        .history{
+            h1{
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            table{
+                width: 60%;
+                margin: 0 auto;
+                background-color: #fff;
+                font-size: 20px;
+                border-collapse: collapse;
+                border-radius: 10px;
+                overflow: hidden;
+                thead{
+                    font-weight: 600;
+                    font-size: 22px;
+                    
+                    tr{
+                        td{
+                            padding: 10px;
+                        }
+                    }
+                }
+                tbody{
+                    tr.deposit{
+                        background-color: #d1e7dd;
+                        td{
+                            padding: 10px;
+                        }
+                    }
+                    tr.withdraw{
+                        background-color: #f8d7da;
+                        td{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

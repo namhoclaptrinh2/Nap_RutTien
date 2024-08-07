@@ -1,0 +1,69 @@
+.form_wallet{
+    &.open{
+        display: flex;
+    }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #0000009a;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: modalAnimate 0.8s ease ;
+
+    .form{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        h2{
+            font-size: 28px;
+            text-transform: capitalize;
+        }
+        .input_soTien{
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            input{
+                padding: 10px;
+                font-size: 20px;
+
+            }
+            .message{
+                color: red;
+            }
+        }
+        .btn_cancel-agree{
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            .btn_cancel{
+                padding: 5px 10px;
+                color: #fff;
+                background-color: rgb(216, 45, 45);
+                border: none;
+                border-radius: 3px;
+            }
+            .btn_agree{
+                padding: 5px 10px;
+                color: #fff;
+                background-color: green;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+@keyframes modalAnimate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
